@@ -16,7 +16,8 @@
         <nav class="navbar">
             
             <a href="#accueil" class="logo">
-                <h1>Nova<span>Tech</span></h1>
+                <img src="https://i.ibb.co/vxH5BRJM/Logo-Nova-Tech-transparent.png" alt="" class="logo-icon">
+                <h1>ova<span>Tech</span></h1>
             </a>
 
             <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu">
@@ -33,7 +34,7 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
 
-                <a href="#contact" class="btn btn-primary">Nous contacter</a>
+                <a href="#contact" class="btn btn-primary btn-fill-up header-contact-cta">Nous contacter</a>
             </div>
             
         </nav>
@@ -41,59 +42,27 @@
 
     <main>
 
-        <section class="hero" id="accueil">
+    <section class="hero" id="accueil">
+    <video autoplay loop muted playsinline class="bg-video">
+       <source src="videos/background.mp4.mp4" type="video/mp4">
+    </video>
+
+    <div class="video-overlay"></div>
             <div class="hero-container">
-                <div class="hero-content">
-                    <p class="eyebrow">SOLUTIONS DIGITALES</p>
+                <div class="hero-content" data-reveal>
+                    <p class="eyebrow hero-eyebrow">SOLUTIONS DIGITALES</p>
                     <h1>Construisons ensemble votre présence digitale.</h1>
                     <p class="hero-text">
                         Nous créons des solutions web modernes, simples et adaptées aux besoins de votre entreprise.
                     </p>
 
                     <div class="hero-buttons">
-                        <a href="#services" class="btn btn-primary">Découvrir nos services</a>
-                        <a href="#contact" class="btn btn-secondary">Nous contacter</a>
+                        <a href="#services" class="btn btn-primary btn-fill-up btn-hover-white">Découvrir nos services</a>
+                        <a href="#contact" class="btn btn-secondary btn-fill-up">Nous contacter</a>
                     </div>
-                </div>
-
-                <div class="hero-image">
-                    <div class="dashboard">
-                        <div class="dashboard-header">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-
-                        <div class="dashboard-content">
-                            <div class="dashboard-title"></div>
-                            <div class="dashboard-line"></div>
-                            <div class="dashboard-line small"></div>
-
-                            <div class="cards">
-                                <div class="mini-card">
-                                    <div class="mini-icon">↗</div>
-                                    <strong>Digital</strong>
-                                    <small>+28%</small>
-                                </div>
-
-                                <div class="mini-card">
-                                    <div class="mini-icon">✓</div>
-                                    <strong>Projets</strong>
-                                    <small>24</small>
-                                </div>
-                            </div>
-
-                            <div class="chart">
-                                <span style="height: 35%"></span>
-                                <span style="height: 55%"></span>
-                                <span style="height: 45%"></span>
-                                <span style="height: 75%"></span>
-                                <span style="height: 60%"></span>
-                                <span style="height: 90%"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                  </div>           
+                 </div>
+               </div>
             </div>
         </section>
 
@@ -105,14 +74,14 @@
                     </div>
                 </div>
 
-                <div class="about-content">
-                    <p class="eyebrow">À PROPOS</p>
+                <div class="about-content" data-reveal>
+                    <p class="eyebrow about-eyebrow">À PROPOS</p>
                     <h2>À propos de Nova<span>Tech</span></h2>
                     <p>
                         NovaTech accompagne les entreprises dans leur transformation digitale grâce à des solutions web modernes, accessibles et adaptées à leurs besoins.
                     </p>
 
-                    <a href="#contact" class="btn btn-primary">En savoir plus</a>
+                    <a href="#contact" class="btn btn-primary btn-fill-up btn-hover-white">En savoir plus</a>
                 </div>
             </div>
         </section>
@@ -120,7 +89,7 @@
         <section class="services section" id="services">
             <div class="container">
                 <div class="section-title">
-                    <p class="eyebrow">NOS SERVICES</p>
+                    <p class="eyebrow services-eyebrow">NOS SERVICES</p>
                     <h2>Des solutions digitales adaptées à votre entreprise</h2>
                     <p>
                         Nous transformons vos idées en expériences digitales simples et efficaces.
@@ -128,19 +97,19 @@
                 </div>
 
                 <div class="services-grid">
-                    <article class="service-card">
+                    <article class="service-card" data-reveal>
                         <div class="service-number"><i class="fa-solid fa-laptop-code"></i></div>
                         <h3>Création de sites web</h3>
                         <p>Des sites modernes, rapides et adaptés à tous les écrans.</p>
                     </article>
 
-                    <article class="service-card">
+                    <article class="service-card" data-reveal>
                         <div class="service-number"><i class="fa-solid fa-chart-line"></i></div>
                         <h3>Solutions digitales</h3>
                         <p>Des outils numériques conçus autour des besoins réels de votre activité.</p>
                     </article>
 
-                    <article class="service-card">
+                    <article class="service-card" data-reveal>
                         <div class="service-number"><i class="fa-solid fa-user-tie"></i></div>
                         <h3>Accompagnement</h3>
                         <p>Un accompagnement clair pour développer votre présence en ligne.</p>
@@ -151,7 +120,7 @@
 
         <section class="contact section" id="contact">
             <div class="container contact-container">
-                <div class="contact-info">
+                <div class="contact-info" data-reveal>
                     <p class="eyebrow">CONTACT</p>
                     <h2>Contactez-nous</h2>
                     <p>
@@ -216,12 +185,9 @@
                         </div>
                     </div>
 
-                    <a href="https://wa.me/221769871501?text=Bonjour%20NovaTech%2C%20je%20souhaite%20discuter%20de%20mon%20projet." class="btn btn-primary contact-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Démarrer une discussion WhatsApp">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
                 </div>
 
-                <form class="contact-form" id="contactForm" action="https://formsubmit.co/husseindiallo65@gmail.com" method="POST" novalidate>
+                <form class="contact-form" id="contactForm" data-reveal action="https://formsubmit.co/husseindiallo65@gmail.com" method="POST" novalidate>
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_subject" value="Nouveau message depuis NovaTech">
 
@@ -249,7 +215,7 @@
                         <small id="messageError"></small>
                     </div>
 
-                    <button type="submit" class="btn btn-primary send-button">Envoyer</button>
+                    <button type="submit" class="btn btn-primary btn-fill-up btn-hover-white send-button">Envoyer</button>
 
                     <div id="successMessage" class="success-message">
                         Merci ! Votre message a bien été envoyé.
@@ -262,12 +228,15 @@
 
     <footer class="footer">
         <div class="footer-container">
-            <div class="footer-brand">
-                <h2>NovaTech</h2>
+            <div class="footer-brand" data-reveal>
+                <h2 class="footer-logo">
+                    <img src="https://i.ibb.co/HDtmJ4ty/Logo-Nova-Tech.png" alt="" class="footer-logo-icon">
+                    <span>ovaTech</span>
+                </h2>
                 <p>Solutions digitales modernes.</p>
             </div>
 
-            <div class="footer-nav">
+            <div class="footer-nav" data-reveal>
                 <h3>Navigation</h3>
                 <a href="#accueil">Accueil</a>
                 <a href="#apropos">À propos</a>
@@ -275,7 +244,7 @@
                 <a href="#contact">Contact</a>
             </div>
 
-            <div class="footer-contact">
+            <div class="footer-contact" data-reveal>
                 <h3>Contact</h3>
                 <p><i class="fas fa-envelope"></i> husseindiallo65@gmail.com</p>
                 <p><i class="fas fa-phone"></i> +221 76 987 15 01</p>
@@ -287,6 +256,10 @@
             © 2026 NovaTech. Tous droits réservés.
         </div>
     </footer>
+
+    <a href="https://wa.me/221769871501?text=Bonjour%20NovaTech%2C%20je%20souhaite%20discuter%20de%20mon%20projet." class="footer-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Démarrer une discussion WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
     <script src="projet.script.js"></script>
 </body>

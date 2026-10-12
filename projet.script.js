@@ -13,6 +13,25 @@ if (hamburger && navMenu) {
     });
 }
 
+const revealItems = document.querySelectorAll("[data-reveal]");
+if ("IntersectionObserver" in window) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.18 });
+
+    revealItems.forEach((item, index) => {
+        item.style.transitionDelay = `${index * 120}ms`;
+        revealObserver.observe(item);
+    });
+} else {
+    revealItems.forEach(item => item.classList.add("is-visible"));
+}
+
 const form = document.getElementById("contactForm");
 const successMessage = document.getElementById("successMessage");
 
